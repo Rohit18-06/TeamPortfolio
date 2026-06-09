@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportElite SquadError } from "../lib/Elite Squad-error-reporting";
+import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Elite Squad App" },
-      { name: "description", content: "Elite Squad Generated Project" },
+      { title: "Elite Squad" },
+      { name: "description", content: "Elite Squad Portfolio" },
       { name: "author", content: "Elite Squad" },
       { property: "og:title", content: "Elite Squad App" },
       { property: "og:description", content: "Elite Squad Generated Project" },
