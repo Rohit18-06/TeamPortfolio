@@ -1,10 +1,10 @@
-﻿import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Mail, MapPin, Phone, Github, Linkedin } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Triad" },
+      { title: "Elite Squad" },
       { name: "description", content: "Team Portfolio" },
     ],
   }),
