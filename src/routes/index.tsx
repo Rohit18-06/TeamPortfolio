@@ -13,11 +13,15 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <div className="max-w-7xl mx-auto px-4 py-20">
-        <h1 className="text-4xl font-bold">Triad - Team Portfolio</h1>
-        <p className="mt-4 text-muted-foreground">Rohit, Akshith, and Pooja</p>
-      </div>
+    <main className="min-h-screen">
+      <Nav />
+      <Hero />
+      <Marquee />
+      <Members />
+      <Work />
+      <Stack />
+      <Contact />
+      <Footer />
     </main>
   );
 }
