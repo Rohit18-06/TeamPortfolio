@@ -38,7 +38,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportElite SquadError(error, { boundary: "tanstack_root_error_component" });
+    reportLovableError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
 
   return (
@@ -80,11 +80,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Elite Squad" },
       { name: "description", content: "Elite Squad Portfolio" },
       { name: "author", content: "Elite Squad" },
-      { property: "og:title", content: "Elite Squad App" },
-      { property: "og:description", content: "Elite Squad Generated Project" },
+      { property: "og:title", content: "Elite Squad" },
+      { property: "og:description", content: "Elite Squad Portfolio" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Elite Squad" },
+      { name: "twitter:site", content: "@EliteSquad" },
     ],
     links: [
       {
